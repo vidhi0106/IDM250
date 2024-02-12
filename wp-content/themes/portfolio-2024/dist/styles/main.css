@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+header{
+justify-content: space-around;
+}
+
+.menu{
+  display:flex;
+  justify-content: space-around;
+  width:100%;
+  background-color: black;
+  color:white;
+  text-decoration: none;
+  padding:20px;
+  }
+
+  li{
+  color:white;
+  text-decoration:none;
+  display:block;
+  }
+  a{
+    color:white;
+    text-decoration:none;
+    }
+
+  footer{
+  display:flex;
+  justify-content: center;
+  }
