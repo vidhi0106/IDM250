@@ -1,3 +1,51 @@
+@font-face {
+  font-family: "Roboto-black";
+  src: url(fonts/Roboto-Black.ttf) format("truetype")
+}
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(fonts/Roboto-Bold.ttf) format("truetype")
+}
+@font-face {
+  font-family: "Roboto-medium";
+  src: url(fonts/Roboto-Medium.ttf) format("truetype")
+}
+@font-face {
+  font-family: "Roboto-regular";
+  src: url(fonts/Roboto-Regular.ttf) format("truetype")
+}
+@font-face {
+  font-family: "Roboto-light";
+  src: url(fonts/Roboto-Light.ttf) format("truetype")
+}
+@font-face {
+  font-family: "Roboto-thin";
+  src: url(fonts/Roboto-Thin.ttf) format("truetype")
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(fonts/Lato-Regular.ttf) format("truetype")
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: url(fonts/Lato-Bold.ttf) format("truetype")
+}
+
+:root {
+--Roboto-black:"Roboto-black";
+--Roboto-bold:"Roboto-bold";
+--Roboto-medium:"Roboto-medium";
+--Roboto-regular:"Roboto-regular";
+--Roboto-light:"Roboto-light";
+--Roboto-thin:"Roboto-thin";
+--Lato-Regular:"Lato-Regular";
+--Lato-Bold:"Lato-Bold";
+
+}
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -19,6 +67,7 @@ justify-content: space-around;
   color:white;
   text-decoration:none;
   display:block;
+  font-family: var(--Roboto-bold);
   }
   a{
     color:white;
@@ -28,4 +77,12 @@ justify-content: space-around;
   footer{
   display:flex;
   justify-content: center;
+  }
+
+
+  @media only screen and (max-width: 550px){
+    .menu{
+      display:block;
+      padding-left:70%;
+    }
   }
