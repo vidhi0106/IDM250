@@ -1,6 +1,18 @@
 <?php get_header(); ?>
-<h1>
-  <?php echo get_the_title(); ?>
-</h1>
-<p>This is a page.php template</p>
+
+
+
+<?php
+    if (is_page('shop')) {
+        get_template_part('components/single-product');
+    }elseif (is_page('horoscope')) {
+        get_template_part('components/horoscope');
+    } else {
+       
+    }
+    ?>
+
+
+
+
 <?php get_footer(); ?>

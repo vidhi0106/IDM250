@@ -2,12 +2,9 @@
 
 function theme_scripts_and_styles()
 {
-    // Enqueue a custom script
-    // wp_enqueue_script('idm-tailwind-script', 'https://cdn.tailwindcss.com');
+    
     wp_enqueue_script('idm-main-script', get_template_directory_uri() . '/dist/scripts/main.js', [], false, ['in_footer' => true]);
 
-    // Enqueue a custom style
-    // wp_enqueue_style('idm-normalize', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
     wp_enqueue_style('idm-main-style', get_template_directory_uri() . '/dist/styles/main.css');
 }
 
@@ -123,3 +120,17 @@ function get_featured_image_data($post_id)
     // Return false if there is no post thumbnail
     return false;
 }
+
+function custom_theme_setup() {
+    // Register custom post type for products
+    register_post_type('product', array(
+        'labels' => array(
+            'name' => __('Products'),
+            'singular_name' => __('Product')
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'products'),
+    ));
+}
+add_action('init', 'custom_theme_setup');
