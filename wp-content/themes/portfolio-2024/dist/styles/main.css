@@ -46,6 +46,7 @@
 h2{
 font-family: var(--Roboto-bold);
 font-size: 2rem;
+color:whitesmoke;
 
 }
 
@@ -222,6 +223,170 @@ padding:10px;
 .close-icon{
 display: none;
 }
+
+
+.signup_label{
+background-color:black;
+color:whitesmoke;
+border-top: 2.5px solid whitesmoke;
+}
+
+.signup{
+  background-color:black;
+  color:whitesmoke;
+  padding-top:20px;
+
+  }
+  
+
+.signup_label h2{
+margin-bottom:0px;
+padding: 0px 0px 0px 40px;
+}
+
+
+
+.input input[type="email"] {
+  width: 300px; 
+  padding: 10px;
+  border: 1px solid lightgrey; 
+  border-radius: 20px; 
+  outline: none; 
+  transition: border-color 0.3s; 
+}
+
+.input{
+  display:flex;
+  flex-direction:row;
+  padding-bottom:30px;
+}
+
+.email{
+  padding-left: 40px;
+}
+
+.input input[type="email"]:focus {
+  border-color: #ccc; 
+}
+
+.input input[type="email"]::placeholder {
+  color: lightgrey; 
+}
+
+
+.input .submit button {
+  padding: 10px 20px; 
+  margin-left: 30px; 
+  border: 2.5px solid whitesmoke; 
+  border-radius: 20px; 
+  background-color: transparent; 
+  color: whitesmoke; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.input .submit button:hover {
+  background-color: whitesmoke; /* Change background color on hover */
+  color: black; /* Change font color on hover */
+}
+
+.input .submit button:active {
+  background-color: lightgrey; /* Change background color on click */
+  color: black; /* Change font color on click */
+}
+
+
+.hero_home{
+max-width:100%;
+position:absolute;
+top:0;
+left:0;
+z-index:-1;
+margin:40px 10px 30px 10px;
+object-fit: fill;
+height: 100%;
+width: auto;
+}
+
+.logo_home{
+  max-width:100%;
+  position:absolute;
+  top:0;
+  right: 0;
+  margin-top: 166px;
+  }
+  
+
+
+.horoscope_button {
+  width: 300px;
+  height: 100px;
+  background-color: #A1EDE9;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 100px; /* Center the text vertically */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.horoscope_button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.horoscope_button:active {
+  background-color: lightgrey;
+  color: black;
+}
+
+.button-link {
+  color: inherit; /* Use the text color defined for the button */
+  text-decoration: none;
+}
+
+.shop_button {
+  width: 300px;
+  height: 100px;
+  background-color: #EDCFA1;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 100px; /* Center the text vertically */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.horoscope_button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.horoscope_button:active {
+  background-color: lightgrey;
+  color: black;
+}
+
+.button-link {
+  color: inherit; /* Use the text color defined for the button */
+  text-decoration: none;
+}
+
+.button{
+display:flex;
+flex-direction: row;
+}
+
+.padding{
+padding:30px 30px 60px 30px;
+}
+
 
 /* Show menu navigation and hide toggle button on larger screens */
 @media screen and (min-width: 575px) {
@@ -411,6 +576,7 @@ margin-top:10px;
 
 .content-area{
 background-color:black;
+padding-bottom:20px;
 }
 
 .site-main{
@@ -419,3 +585,225 @@ margin:auto;
 flex-wrap:wrap;
 justify-content: center;
 }
+
+.aries{
+background-color:black;
+color:whitesmoke;
+padding:20px;
+}
+
+.horoscope_title{
+padding: 0px 20px 0px 20px;
+display:flex;
+flex-direction: row;
+}
+
+.sections{
+display:flex;
+justify-content:flex-end;
+flex-direction:column;
+color:#A1EDE9;
+padding-left:20%;
+}
+
+.daily{
+background-color:black;
+color:whitesmoke;
+padding:20px 40px;
+}
+
+.daily h2{
+color:#A1EDE9;
+}
+.author_date{
+padding:0px 20px 20px 20px;
+}
+
+.love_main{
+  background-color:black;
+  color:whitesmoke;
+  padding:20px 40px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  }
+.love_main h2{
+color:#A1EDE9;
+}
+
+.love_img{
+width:50%;
+align-items: center;
+margin:auto;
+}
+
+.hero_home2{
+display:none;
+}
+
+.love_text{
+width:70%;
+padding-right:20px;
+}
+.love_hero{
+width:100%;
+}
+
+.quote{
+background-color:black;
+color:#A1EDE9;
+padding:20px;
+margin:auto;
+text-align: center;
+
+}
+.aries{
+padding:40px;
+}
+
+.zodiac{
+  display:flex;
+  flex-wrap:wrap;
+  background-color: black;
+  margin:auto;
+  max-width:1250px;
+  }
+  
+  .zodiac a{
+    padding:20px;
+    margin:auto;
+  }
+  
+  .horoscope_content{
+  background-color: black;
+  color:whitesmoke;
+  padding:20px 20px 10px 20px;;
+  }
+  
+  .front_page{
+    color:whitesmoke;
+    padding: 40px 40px 10px 40px;
+    max-width: 600px;
+  }
+
+@media screen and (max-width:1000px){
+  .horoscope_button {
+  width:200px;
+  font-size:24px;
+  height:75px;
+  line-height: 0px;
+
+  }
+  .shop_button {
+    width:200px;
+    font-size:24px;
+    height:75px;
+    line-height: 0px;
+    }
+
+    .hero_home{
+      margin: 112px 10px 30px 10px;
+    height:80%}
+  
+  }
+
+@media screen and (max-width:850px){
+  .sections{
+  padding-left:10px;
+  }
+  .love_main{
+  flex-direction:column;
+  }
+  .love_text{
+  width:100%;
+  }
+  .love_img{
+  padding:10px 20px;
+  }
+  .zodiac a{
+    padding:10px;
+    margin:auto;
+  }
+ .logo_home{
+display:none;
+ }
+.front_page{
+  padding: 7px 40px 10px 40px;
+}
+.padding {
+  padding: 0px 30px 39px 30px;
+  margin:auto;
+}
+.hero_home{
+height:60%}
+}
+
+@media screen and (max-width:700px){
+  .horoscope_title{
+    flex-wrap:wrap;
+
+  }
+  .sections{
+  margin:auto;
+  }
+  .aries{
+  padding:20px;
+  }
+  .hero_img{
+  width:80%;
+  }
+  .hero{
+  margin:auto;
+  }
+  .horoscope_title{
+  padding:0px;
+  }
+  .author_date{
+  padding:0px 10px;
+  margin:auto;
+  }
+
+}
+
+@media screen and (max-width:650px){
+  .button{
+    flex-direction:column;
+  }
+  .hero_home{
+    height:75%}
+  
+}
+
+@media screen and (max-width:550px){
+  .zodiac a{
+    padding:4px;
+    margin:auto;
+  }
+}
+
+
+
+@media screen and (max-width:450px){
+  .signup_label h2{
+    font-size:1.5rem;
+    margin:auto;
+    padding:20px 0px 0px 20px;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+}
+.submit{
+padding-top:20px;
+justify-content: center;
+margin:auto;
+}
+.email{
+margin:auto;
+padding:0px;
+}
+.input .submit button {
+  margin-left:0px;
+}
+}
+

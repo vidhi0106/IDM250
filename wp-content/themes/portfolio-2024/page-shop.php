@@ -1,5 +1,9 @@
 <?php
 get_header(); ?>
+
+<div class="horoscope_content"><?php get_the_content();?>
+<h2> <?php echo get_the_title(); ?> </h2>
+
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
         <?php
@@ -14,8 +18,8 @@ get_header(); ?>
                 // Display the product details
                 ?>
                 <div class="product">
-                    <h4><?php the_title(); ?></h4>
                     <?php the_content(); ?>
+                    <h4><?php echo get_field('product_name'); ?></h4>
                     <p><?php echo get_field('price'); ?></p>
                 </div>
                 <?php

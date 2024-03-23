@@ -132,5 +132,32 @@ function custom_theme_setup() {
         'has_archive' => true,
         'rewrite' => array('slug' => 'products'),
     ));
+    register_post_type('zodiac', array(
+        'labels' => array(
+            'name' => __('zodiac'),
+            'singular_name' => __('zodiac')
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'zodiac'),
+    ));
+    register_post_type('signup', array(
+        'labels' => array(
+            'name' => __('signup'),
+            'singular_name' => __('signup')
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'signup'),
+    ));
+    register_post_type('home', array(
+        'labels' => array(
+            'name' => __('home'),
+            'singular_name' => __('home')
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'home'),
+    ));
 }
 add_action('init', 'custom_theme_setup');
